@@ -20,7 +20,7 @@ body {
     width: 80%; /* w80% */
 }
 header {
-    background-color: #003; /* bgc#003 */
+    background-color: #000032; /* bgc#000032 */
     
     background-image: url(images/sunset.jpg); /* bgiurl(images/sunset.jpg.jpg) */
     background-position: right; /* bgpright */
@@ -47,7 +47,6 @@ nav {
     font-size: 120%; /* fz120% */
     font-weight: bold; /* fwb */
     padding: 0; /* p0 */
-    width: 160px; /* w160px */
     text-align: center; /* txc */
 }
 
@@ -64,7 +63,7 @@ nav ul {
 }
 nav li {
     border-bottom: 1px solid #003; /* bdb1px solid #003 */
-    padding: 0.5rem; /* p0.5em */
+    padding: 0.5em 0; /* p0.5em */
     max-width: 100%;
     box-sizing: border-box;
 }
@@ -85,7 +84,7 @@ main {
     padding: 0.0625rem 1.25rem 1.25rem 1.875rem; /* 
 p1px20px20px */
 }
-section {}
+section { padding: 1rem 0;}
    h1, h2, h3, footer { 
     font-family: Georgia, "Times New Roman", Times, serif; }
 
@@ -97,7 +96,7 @@ h1 {
 
 h2 {
     color: #1976d2; /* c#1976d2 */
-    text-shadow: 1px 1px #CCC; /* txsh1px1px#CCC */
+    text-shadow: 1px 1px 1px #CCC; /* txsh1px1px#CCC */
 }
 h3 { 
     color:#003; /* c#033 */
@@ -168,10 +167,18 @@ td, th {
 td {
     text-align: center;
 }
-td { text-align: left; 
+.text { text-align: left; 
 }
 tr:nth-of-type(odd) {
     background-color: #ffcd6f;
+}
+@media (max-width: 32.5rem) {
+    body {
+        background-image: none;
+        border: none;
+        box-shadow: none;
+        margin: 0;
+    }
 }
 
   #wrapper {
@@ -185,7 +192,7 @@ tr:nth-of-type(odd) {
     padding: 0;
   }
   footer {
-    padding: 1em 0%;
+    padding: 1em;
   }
   #special table {
     margin: 0 auto;
@@ -252,11 +259,12 @@ td::before {
         flex: 1 1 0; /* flex: 1 1 0 */
         max-width: 100%; /* mw:100% */
     }
+
+}
 tr {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 tr:hover {
-        background-color: #ffcd6f;
+        background-color: #fff4cc;
         color: #333333;
-}
 }
