@@ -179,28 +179,27 @@ tr:nth-of-type(odd) {
         box-shadow: none;
         margin: 0;
     }
-}
-
   #wrapper {
     width: 100%;
     max-width: 100%;
     margin: 0;
     padding: 0;
-}
+  }
   header {
     background-image: none; 
     padding: 0;
   }
+
   footer {
     padding: 1em;
   }
   #special table {
     margin: 0 auto;
-}
+ }
   #special td, #special th {
      display: block;
     width: 100%;
-}
+ }
 #special th {
     height: 0;
     margin: 0;
@@ -211,10 +210,10 @@ tr:nth-of-type(odd) {
     }
 td.package::before {
     content: "Package: ";
-}
+ }
 td.description::before {
     content: "Description: ";
-}
+ }
 td.nights::before {
     content: "Nights: ";
 }
@@ -238,6 +237,7 @@ td::before {
     font-weight: bold;
     white-space: nowrap;
 }
+}
 
 @media (min-width: 37.5rem) {
     nav ul {
@@ -259,12 +259,11 @@ td::before {
         flex: 1 1 0; /* flex: 1 1 0 */
         max-width: 100%; /* mw:100% */
     }
-
-}
 tr {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 tr:hover {
         background-color: #fff4cc;
         color: #333333;
+}
 }
